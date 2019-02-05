@@ -1,0 +1,436 @@
+/*
+Theme Name: aurora_theme
+Author: Vladislav Malakeev
+Description: developed for aurora partners
+Version: 1.0
+ */
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #484848;
+    text-align: center;
+}
+#header{
+    background: #d88081;
+    padding: 15px;
+    text-align: center;
+}
+
+#header a{
+    color: #ffffff;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#header a:hover{
+    color: yellow;
+    background: #a941418f;
+    border-radius: 5px;
+}
+#headerInfo{
+    text-align: left;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    margin:0 20px 20px 20px;
+}
+@media (min-width : 1600px) {
+    #wrap{
+        padding: 7% 17%;
+    }
+    #backgroundBlock{
+        padding: 20px 17%;
+    }
+    .flexImage img{
+        height:40%;
+    }
+    iframe{
+        height: 50%;
+        padding: 30px;
+    }
+}
+@media (max-width : 1600px) {
+    #wrap{
+        padding: 5% 15%;
+    }
+    #backgroundBlock{
+        padding: 20px 15%;
+    }
+    .flexImage img{
+        height:50%;
+    }
+    iframe{
+        height: 60%;
+        padding: 25px;
+    }
+
+}
+
+@media (max-width : 1366px) {
+    #wrap{
+        padding: 3% 10%;
+    }
+
+    #backgroundBlock{
+        padding: 20px 10%;
+    }
+
+    .flexImage img{
+        height:60%;
+    }
+    iframe{
+        height: 70%;
+        padding: 20px;
+    }
+}
+
+@media (max-width : 1024px) {
+    #wrap{
+        padding: 1% 2%;
+    }
+    #backgroundBlock{
+        padding: 20px 7%;
+    }
+    .flexImage img{
+        height:55%;
+    }
+    iframe{
+        height: 60%;
+        padding: 20px;
+    }
+}
+
+@media (max-width : 800px) {
+    #wrap{
+        padding: 1% 1%;
+    }
+    #backgroundBlock{
+        padding: 15px 5%;
+    }
+
+    .flexImage img{
+        height:50%;
+    }
+    iframe{
+        height: 50%;
+        padding: 10px;
+    }
+}
+
+@media (max-width : 480px) {
+    #wrap{
+        padding: 0% 0%;
+    }
+    #backgroundBlock{
+        padding: 10px 3%;
+    }
+
+    .flexImage img{
+        height:40%;
+    }
+    iframe{
+        height: 40%;
+        padding: 5px;
+    }
+}
+
+#backgroundBlock{
+    background: #FBF4F4;
+    box-shadow: inset 0px 0px 2px -1px #ff0202;
+    border-radius: 10px;
+    margin: 15px;
+}
+#backgroundBlock h1{
+    margin: 5px;
+}
+#postHead{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+#postHead img{
+    width: 100%;
+    border:1px solid black;
+}
+#postHead h1{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0px 16px #00000075;
+    margin: -10px 10px 10px 10px;
+    position: absolute;
+}
+
+#pageHeader h1{
+    color:#a75a15;
+    text-align: center;
+    margin: 0;
+    border-bottom: 2px solid #a75a15;
+}
+
+#description{
+    text-align: center;
+    padding: 25px 5px;
+}
+
+#description img{
+    width: 100%;
+    border: 1px solid black;
+}
+
+#description p{
+    background: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: tahoma;
+    line-height: 30px;
+    color: #313131;
+    padding: 10px 25px;
+    text-align: justify;
+    margin: 0;
+}
+
+#description p:first-letter{
+    margin-left: 45px;
+}
+
+#description p:last-of-type {
+    margin-bottom:25px ;
+    margin-top:0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#description p:first-of-type {
+    margin-top: 25px;
+    margin-bottom:0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.samplePosts{
+    text-align: center;
+    margin: 25px 0;
+    padding: 10px;
+    box-shadow: 0 0px 3px -1px black;
+    background: white;
+}
+.samplePosts:hover{
+    box-shadow: 0 0px 3px 1px #e51911;
+}
+.samplePosts:hover  h2{
+    color: #cb0000;
+}
+
+.sampleLink{
+    text-decoration: none;
+}
+
+.samplePosts img{
+    width: 100%;
+}
+
+.samplePosts p{
+    text-align: justify;
+    background: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: tahoma;
+    line-height: 30px;
+    color: #313131;
+    padding: 15px;
+    margin: 0px;
+}
+
+.samplePosts h2{
+    color: #484848;
+    text-align: center;
+    border-bottom: 1px solid;
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+}
+
+.samplePosts p::first-letter{
+    margin-left: 45px;
+}
+.postLinks{
+    text-align: center;
+    margin:50px 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.postLinks:hover .more{
+    background: #ffd13a;
+}
+.postLinks img{
+   width: 100%;
+    border: 1px solid black;
+}
+
+
+.postLinks h2{
+    position: absolute;
+    color: white;
+    text-decoration: underline;
+    margin: 15px;
+    box-shadow: 0 0px 16px #00000075;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 5px 10px;
+
+}
+.postLinks h3{
+    margin-top: -52px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    text-align: right;
+    margin-bottom: 0;
+}
+.more{
+    padding: 5px 25px;
+    background: #EEC03A;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 0px #e4bb34;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+#footer{
+    background: #981826;
+    padding: 10px;
+}
+
+#footer h2{
+    color: white;
+    margin: 5px;
+    letter-spacing: 1px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+
+    font-weight: bold;
+
+}
+#footer h3{
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    font-weight: bold;
+    font-size: 25px;
+    color: #330808;
+}
+
+#contacts{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 5px double #b15353;
+    margin: auto;
+    width: 50%;
+}
+
+#viberButton, #telegramButton{
+    margin: 10px 30px;
+    padding: 5px;
+    width: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#viberButton img, #telegramButton img{
+    border-radius: 10px;
+}
+#viberButton span, #telegramButton span{
+    color: white;
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#telegramButton{
+    background: #bf7171;
+}
+
+#telegramButton:hover{
+    cursor: pointer;
+    background: #2CA5E0;
+    color: yellow;
+}
+
+#viberButton{
+    background: #bf7171;
+}
+
+#viberButton:hover{
+    cursor: pointer;
+    background: #7B519D;
+    color: yellow;
+}
+
+iframe{
+    width: 95%;
+    background:  #4d4d4d;
+}
+.productElement{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 2%;
+    background: white;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+.productElement img{
+    width: 100%;
+}
+
+.productElement h2{
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+   padding:2px 0 5px 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #6d6d6d;
+    border-bottom: 2px solid #6d6d6d;
+}
+#imgBlock h3{
+    padding: 15px;
+    margin-top: -52px;
+    margin-bottom: 0px;
+    background: rgba(255, 255, 255, 0.37);
+    text-align: center;
+    color: #9e1515;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+#imgBlock:hover h3{
+    background: rgba(0, 0, 0, 0.37);
+    color: white;
+}
+#imgBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+#error{
+    text-align: center;
+}
+.cbalink{
+    display: none;
+}
